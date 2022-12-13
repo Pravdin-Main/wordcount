@@ -4,7 +4,6 @@ import (
 	// "bufio"
 	"bufio"
 	"fmt"
-	"log"
 	"os"
 	"strings"
 )
@@ -14,7 +13,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	src, err := reader.ReadString('\n')
 	if err != nil {
-		log.Fatal(err)
+		// log.Fatal(err)
 	}
 
 	// scanner := bufio.NewScanner(os.Stdin)
