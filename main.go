@@ -1,20 +1,22 @@
 package main
 
 import (
-	// "bufio"
-	"bufio"
+	"flag"
 	"fmt"
-	"os"
 	"strings"
 )
 
 func main() {
-	var src string
-	reader := bufio.NewReader(os.Stdin)
-	src, err := reader.ReadString('\n')
-	if err != nil {
-		// log.Fatal(err)
-	}
+	// var src string
+	// reader := bufio.NewReader(os.Stdin)
+	// src, err := reader.ReadString('\n')
+	// if err != nil {
+	// 	// log.Fatal(err)
+	// }
+	// fmt.Scan(&src)
+	// flag.StringVar(&src, "p", "", "pattern to match against")
+	// // flag.Parse()
+	src := strings.Join(flag.Args(), "")
 
 	// scanner := bufio.NewScanner(os.Stdin)
 	// if scanner.Scan() {
